@@ -1,0 +1,118 @@
+.advantages {
+  position: relative;
+  color: $color-dark;
+  background-color: #c3d9ea;
+  padding: 120px 0;
+  background-image: image-set(
+    url("../img/advantages/advantages-bg.webp") 1x,
+    url("../img/advantages/advantages-bg.jpg") 1x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: image-set(
+      url("../img/advantages/advantages-bg@2x.webp") 2x,
+      url("../img/advantages/advantages-bg@2x.jpg") 2x
+    );
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(227, 236, 246, 0.9);
+  }
+
+  @include vp-1023 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    background-position: left;
+    padding: 65px 0;
+  }
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__wrapper h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 60px;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  @include vp-1023 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.advantages__item {
+  background-color: $color-light;
+  padding: 30px;
+
+  @include vp-1023 {
+    padding: 25px 20px;
+  }
+
+  @include vp-1023 {
+    &--liner svg {
+      width: 21px;
+      height: 26px;
+    }
+
+    &--all svg {
+      width: 27px;
+      height: 26px;
+    }
+
+    &--zodiac svg {
+      width: 36px;
+      height: 26px;
+    }
+  }
+}
+
+.advantages__item h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.advantages__item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}

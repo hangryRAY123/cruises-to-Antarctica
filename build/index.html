@@ -10,12 +10,529 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <!-- Шапка -->
+
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <img
+              src="img/logo/logo.svg"
+              width="70"
+              height="38"
+              alt="Логотип Круизы в Антарктику."
+            />
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="" class="nav__link">Преимущества</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Направления</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Ближайшие круизы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Контакты</a>
+                </li>
+              </ul>
+              <button class="nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню.</span>
+              </button>
+            </nav>
+          </div>
+        </div>
       </header>
-      <main></main>
-      <footer>
-        <div class="container"></div>
+      <main>
+        <!-- Интро -->
+
+        <section class="entry">
+          <div class="container">
+            <div class="entry__wrapper">
+              <h1>Круизы в&nbsp;Антарктику</h1>
+              <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- О путешествии  -->
+
+        <section class="about">
+          <div class="container">
+            <div class="about__wrapper">
+              <div class="about__inner">
+                <h2>Путешествие на&nbsp;край Земли</h2>
+                <p>
+                  Это волшебное путешествие поможет вам познакомиться поближе с
+                  удивительным миром Антарктики. Наш круизный лайнер отвезет вас
+                  на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные
+                  айсберги, несколько видов пингвинов, китов, морских котиков
+                  и&nbsp;многое другое.
+                </p>
+              </div>
+              <picture
+                ><source
+                  type="image/webp"
+                  srcset="
+                    img/about/about.webp    1x,
+                    img/about/about@2x.webp 2x
+                  " />
+                <img
+                  src="img/about/about.jpg"
+                  srcset="img/about/about.jpg 1x, img/about/about@2x.jpg 2x"
+                  width="560"
+                  height="301"
+                  alt="Пингвины."
+              /></picture>
+            </div>
+          </div>
+        </section>
+
+        <!-- Преимущества  -->
+
+        <section class="advantages">
+          <div class="container">
+            <div class="advantages__wrapper">
+              <h2>Преимущества</h2>
+              <ul class="advantages__list">
+                <li class="advantages__item advantages__item--liner">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="27"
+                    height="32"
+                  >
+                    <use href="img/sprite.svg#liner"></use>
+                  </svg>
+                  <h3>Небольшой круизный лайнер</h3>
+                  <p>
+                    Круизный лайнер, рассчитанный всего лишь
+                    на&nbsp;300&nbsp;гостей, поможет избежать шума
+                    и&nbsp;очередей и&nbsp;даст возможность насладиться видами
+                    и&nbsp;природой.
+                  </p>
+                </li>
+                <li class="advantages__item advantages__item--all">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="38"
+                    height="32"
+                  >
+                    <use href="img/sprite.svg#all"></use>
+                  </svg>
+                  <h3>Система все включено</h3>
+                  <p>
+                    Все наши круизы работают по&nbsp;системе &laquo;Все
+                    Включено&raquo;. Великолепные блюда и&nbsp;безлимитный бар
+                    доступны для вас 24&nbsp;часа.
+                  </p>
+                </li>
+                <li class="advantages__item advantages__item--zodiac">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="44"
+                    height="32"
+                  >
+                    <use href="img/sprite.svg#zodiac"></use>
+                  </svg>
+                  <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
+                  <p>
+                    Экскурсионные туры к&nbsp;берегам Антарктиды совершаются
+                    на&nbsp;оборудованных лодках типа Zodiac c&nbsp;опытными
+                    экскурсоводами.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Каталог туров  -->
+
+        <section class="tours">
+          <div class="container">
+            <div class="tours__wrapper">
+              <h2>Ближайшие круизы</h2>
+              <ul class="tours__list">
+                <li class="tours__item">
+                  <figure>
+                    <picture
+                      ><source
+                        type="image/webp"
+                        srcset="
+                          img/tours/tour-1.webp    1x,
+                          img/tours/tour-1@2x.webp 2x
+                        " />
+                      <img
+                        src="img/tours/tour-1.jpg"
+                        srcset="
+                          img/tours/tour-1.jpg    1x,
+                          img/tours/tour-1@2x.jpg 2x
+                        "
+                        width="260"
+                        height="386"
+                        alt="Круиз “Астория”."
+                    /></picture>
+                    <figcaption>Круиз “Астория”</figcaption>
+                  </figure>
+                </li>
+                <li class="tours__item">
+                  <figure>
+                    <picture
+                      ><source
+                        type="image/webp"
+                        srcset="
+                          img/tours/tour-2.webp    1x,
+                          img/tours/tour-2@2x.webp 2x
+                        " />
+                      <img
+                        src="img/tours/tour-2.jpg"
+                        srcset="
+                          img/tours/tour-2.jpg    1x,
+                          img/tours/tour-2@2x.jpg 2x
+                        "
+                        width="260"
+                        height="386"
+                        alt="Круиз “Элайн”."
+                    /></picture>
+                    <figcaption>Круиз “Элайн”</figcaption>
+                  </figure>
+                </li>
+                <li class="tours__item">
+                  <figure>
+                    <picture
+                      ><source
+                        type="image/webp"
+                        srcset="
+                          img/tours/tour-3.webp    1x,
+                          img/tours/tour-3@2x.webp 2x
+                        " />
+                      <img
+                        src="img/tours/tour-3.jpg"
+                        srcset="
+                          img/tours/tour-3.jpg    1x,
+                          img/tours/tour-3@2x.jpg 2x
+                        "
+                        width="260"
+                        height="386"
+                        alt="Круиз “Атлантис”."
+                    /></picture>
+                    <figcaption>Круиз “Атлантис”</figcaption>
+                  </figure>
+                </li>
+                <li class="tours__item">
+                  <figure>
+                    <picture
+                      ><source
+                        type="image/webp"
+                        srcset="
+                          img/tours/tour-4.webp    1x,
+                          img/tours/tour-4@2x.webp 2x
+                        " />
+                      <img
+                        src="img/tours/tour-4.jpg"
+                        srcset="
+                          img/tours/tour-4.jpg    1x,
+                          img/tours/tour-4@2x.jpg 2x
+                        "
+                        width="260"
+                        height="386"
+                        alt="Круиз “Одиссей”."
+                    /></picture>
+                    <figcaption>Круиз “Одиссей”</figcaption>
+                  </figure>
+                </li>
+                <li class="tours__item">
+                  <figure>
+                    <picture
+                      ><source
+                        type="image/webp"
+                        srcset="
+                          img/tours/tour-5.webp    1x,
+                          img/tours/tour-5@2x.webp 2x
+                        " />
+                      <img
+                        src="img/tours/tour-5.jpg"
+                        srcset="
+                          img/tours/tour-5.jpg    1x,
+                          img/tours/tour-5@2x.jpg 2x
+                        "
+                        width="260"
+                        height="386"
+                        alt="Круиз “Олимпия”."
+                    /></picture>
+                    <figcaption>Круиз “Олимпия”</figcaption>
+                  </figure>
+                </li>
+                <li class="tours__item">
+                  <figure>
+                    <picture
+                      ><source
+                        type="image/webp"
+                        srcset="
+                          img/tours/tour-6.webp    1x,
+                          img/tours/tour-6@2x.webp 2x
+                        " />
+                      <img
+                        src="img/tours/tour-6.jpg"
+                        srcset="
+                          img/tours/tour-6.jpg    1x,
+                          img/tours/tour-6@2x.jpg 2x
+                        "
+                        width="260"
+                        height="386"
+                        alt="Круиз “Аврора”."
+                    /></picture>
+                    <figcaption>Круиз “Аврора”</figcaption>
+                  </figure>
+                </li>
+                <li class="tours__item">
+                  <figure>
+                    <picture
+                      ><source
+                        type="image/webp"
+                        srcset="
+                          img/tours/tour-7.webp    1x,
+                          img/tours/tour-7@2x.webp 2x
+                        " />
+                      <img
+                        src="img/tours/tour-7.jpg"
+                        srcset="
+                          img/tours/tour-7.jpg    1x,
+                          img/tours/tour-7@2x.jpg 2x
+                        "
+                        width="260"
+                        height="386"
+                        alt="Круиз “Леонор”."
+                    /></picture>
+                    <figcaption>Круиз “Леонор”</figcaption>
+                  </figure>
+                </li>
+                <li class="tours__item">
+                  <figure>
+                    <picture
+                      ><source
+                        type="image/webp"
+                        srcset="
+                          img/tours/tour-2.webp    1x,
+                          img/tours/tour-2@2x.webp 2x
+                        " />
+                      <img
+                        src="img/tours/tour-2.jpg"
+                        srcset="
+                          img/tours/tour-2.jpg    1x,
+                          img/tours/tour-2@2x.jpg 2x
+                        "
+                        width="260"
+                        height="386"
+                        alt="Круиз “Минион - 1”."
+                    /></picture>
+                    <figcaption>Круиз “Минион - 1”</figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Раннее бранирование  -->
+
+        <section class="booking">
+          <div class="container">
+            <div class="booking__wrapper">
+              <div class="booking__box">
+                <h2>Раннее бронирование</h2>
+                <p>
+                  Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда
+                  и&nbsp;сэкономьте до&nbsp;50%
+                </p>
+              </div>
+              <div class="booking__inner">
+                <p>
+                  Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами
+                  в&nbsp;ближайшее время
+                </p>
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <div class="booking__form">
+                    <input
+                      type="text"
+                      name="name"
+                      aria-label="Имя"
+                      placeholder="Имя"
+                      required
+                    />
+                    <input
+                      type="tel"
+                      name="phone-number"
+                      aria-label="Телефон"
+                      placeholder="Телефон"
+                      minlength="12"
+                      required
+                    />
+                    <input
+                      type="email"
+                      name="email"
+                      aria-label="Email"
+                      placeholder="Email"
+                      required
+                    />
+                    <div class="booking__form-field">
+                      <label data-validate="control">
+                        <input
+                          type="checkbox"
+                          name="I agree to the processing of personal data"
+                          data-validate="data"
+                          checked
+                          disabled
+                        />
+                        <span tabindex="0"></span>
+                        <small
+                          >Я согласен на обработку персональных данных</small
+                        >
+                      </label>
+                    </div>
+                    <button class="btn" type="submit" data-validate="submit">
+                      Оставить заявку
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Контакты  -->
+
+        <section class="contacts">
+          <div class="container">
+            <h2 class="visually-hidden">Контакты.</h2>
+            <div class="contacts__wrapper">
+              <div class="contacts__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226084133175!2d30.315220216071797!3d59.968265981886994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1650107353605!5m2!1sru!2sru"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="contacts__inner">
+                <p>
+                  У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте
+                  к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.
+                </p>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      width="18"
+                      height="22"
+                    >
+                      <use href="img/sprite.svg#map"></use>
+                    </svg>
+                    <span
+                      >г. Санкт Петербург, ул. Большая Конюшенная, 19/8</span
+                    >
+                  </li>
+                  <li class="contacts__item">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      width="18"
+                      height="18"
+                    >
+                      <use href="img/sprite.svg#phone"></use>
+                    </svg>
+                    <a href="tel:88002000000">8-800-200-00-00</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Подвал  -->
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__inner">
+              <img
+                src="img/logo/logo.svg"
+                width="70"
+                height="38"
+                alt="Логотип Круизы в Антарктику."
+              />
+              <nav class="nav">
+                <ul class="nav__list nav__list--footer">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link nav__link--footer"
+                      >Преимущества</a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link nav__link--footer"
+                      >Направления</a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link nav__link--footer"
+                      >Ближайшие круизы</a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link nav__link--footer">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link social__link--ok" href="#"
+                  ><span class="visually-hidden">Ok.</span>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="12"
+                    height="20"
+                  >
+                    <use href="img/sprite.svg#ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--dzen" href="#"
+                  ><span class="visually-hidden">Dzen.</span>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="img/sprite.svg#dzen"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--reddit" href="#"
+                  ><span class="visually-hidden">Reddit.</span>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="img/sprite.svg#reddit"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
     <script src="js/vendor.min.js"></script>
