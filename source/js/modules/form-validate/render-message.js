@@ -5,11 +5,11 @@ export class Message {
 
   _messageTemplate(message, state) {
     const cssClass = state === 'valid' ? 'is-valid' : 'is-invalid';
-    return `<span class="input-message ${cssClass}">${message}</span>`;
+    return `<span class="booking__message ${cssClass}">${message}</span>`;
   }
 
   removeMessage(parent) {
-    const parentMessage = parent.querySelector('.input-message');
+    const parentMessage = parent.querySelector('.booking__message');
     if (parentMessage) {
       parentMessage.remove();
     }

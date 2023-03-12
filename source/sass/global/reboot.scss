@@ -18,6 +18,7 @@ html {
   line-height: 24px;
   font-family: $ff-placeholder;
   color: $color-default-black;
+  scroll-behavior: smooth;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -79,6 +80,10 @@ video {
 
 textarea {
   resize: none;
+}
+
+[data-validate="picture"] {
+  display: none;
 }
 
 // chrome autofill background removal
@@ -158,4 +163,5 @@ button,
 [type="submit"] {
   appearance: none;
   user-select: none;
+  cursor: pointer;
 }

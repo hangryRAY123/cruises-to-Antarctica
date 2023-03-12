@@ -3,8 +3,8 @@
   color: $color-dark;
   padding: 50px 0;
   background-image: image-set(
-    url("../img/booking/booking-bg.webp") 1x,
-    url("../img/booking/booking-bg.jpg") 1x
+    url("../img/booking/booking-bg.jpg") 1x,
+    url("../img/booking/booking-bg.webp") 1x
   );
   background-repeat: no-repeat;
   background-position: top;
@@ -12,8 +12,8 @@
 
   @include retina {
     background-image: image-set(
-      url("../img/booking/booking-bg@2x.webp") 2x,
-      url("../img/booking/booking-bg@2x.jpg") 2x
+      url("../img/booking/booking-bg@2x.jpg") 2x,
+      url("../img/booking/booking-bg@2x.webp") 2x
     );
   }
 
@@ -129,6 +129,10 @@
   flex-direction: column;
 }
 
+.booking__form div {
+  position: relative;
+}
+
 .booking__form input {
   font-family: "Montserrat", "Tahoma", sans-serif;
   font-weight: 400;
@@ -138,6 +142,7 @@
   background-color: $color-light;
   border: none;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .booking__form-field {
@@ -209,4 +214,18 @@
 .booking__form-field input:disabled ~ .booking__form-field span {
   opacity: 0.1;
   pointer-events: none;
+}
+
+.booking__message {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.is-valid .booking__message {
+  color: #15ab07;
 }

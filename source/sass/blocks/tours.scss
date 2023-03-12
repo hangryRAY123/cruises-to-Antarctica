@@ -54,6 +54,9 @@
 
 .tours__item {
   position: relative;
+  min-height: 386px;
+  max-width: 260px;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -63,7 +66,17 @@
     height: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
     background: linear-gradient(rgba(1, 28, 64, 0) 50%, #011c40 100%);
+  }
+
+  &:hover .tours__description,
+  &:focus .tours__description {
+    display: flex;
+  }
+
+  @include vp-1023 {
+    max-width: 100%;
   }
 }
 
@@ -80,6 +93,7 @@
   font-size: 18px;
   line-height: 27px;
   color: $color-light;
+  z-index: 2;
 
   @include vp-1023 {
     left: 35px;
@@ -90,4 +104,65 @@
     left: 25px;
     bottom: 25px;
   }
+}
+
+.tours__description {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: $color-dark;
+  color: $color-light;
+  width: 100%;
+  min-height: 386px;
+  top: 0;
+  padding: 25px;
+  padding-bottom: 20px;
+  z-index: 3;
+}
+
+.tours__description h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+
+.tours__description ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.tours__description li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tours__description b {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.tours__description span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.tours__description a {
+  font-family: "Montserrat", "Tahoma", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: auto;
+  color: $color-dark;
+  background-color: $color-light;
+  text-align: center;
+  padding: 14px 0;
+  width: 100%;
 }

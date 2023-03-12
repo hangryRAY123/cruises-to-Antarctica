@@ -28,8 +28,8 @@
   background-color: #b8c4ca;
 
   background-image: image-set(
-    url("../img/contacts/map.webp") 1x,
-    url("../img/contacts/map.jpg") 1x
+    url("../img/contacts/map.jpg") 1x,
+    url("../img/contacts/map.webp") 1x
   );
   background-repeat: no-repeat;
   background-position: center;
@@ -37,8 +37,8 @@
 
   @include retina {
     background-image: image-set(
-      url("../img/contacts/map@2x.webp") 2x,
-      url("../img/contacts/map@2x.jpg") 2x
+      url("../img/contacts/map@2x.jpg") 2x,
+      url("../img/contacts/map@2x.webp") 2x
     );
   }
 
