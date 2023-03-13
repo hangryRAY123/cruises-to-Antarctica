@@ -1,10 +1,11 @@
 .entry {
   color: $color-light;
   background-color: #639ddb;
-  padding: 283px 0;
+  padding-top: 270px;
+  padding-bottom: 280px;
   background-image: image-set(
-    url("../img/entry/entry-bg.jpg") 1x,
-    url("../img/entry/entry-bg.webp") 1x
+    url("../img/entry/entry-bg.webp") 1x,
+    url("../img/entry/entry-bg.jpg") 1x
   );
   background-repeat: no-repeat;
   background-position: center;
@@ -12,17 +13,19 @@
 
   @include retina {
     background-image: image-set(
-      url("../img/entry/entry-bg@2x.jpg") 2x,
-      url("../img/entry/entry-bg@2x.webp") 2x
+      url("../img/entry/entry-bg@2x.webp") 2x,
+      url("../img/entry/entry-bg@2x.jpg") 2x
     );
   }
 
   @include vp-1023 {
-    padding: 280px 0;
+    padding-top: 270px;
+    padding-bottom: 275px;
   }
 
   @include vp-767 {
-    padding: 185px 0;
+    padding-top: 175px;
+    padding-bottom: 180px;
   }
 }
 
@@ -38,18 +41,18 @@
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   @include vp-1023 {
     font-size: 50px;
     line-height: 61px;
-    margin-bottom: 29px;
+    margin-bottom: 10px;
   }
 
   @include vp-767 {
     font-size: 36px;
     line-height: 45px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 }
 

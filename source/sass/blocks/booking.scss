@@ -3,8 +3,8 @@
   color: $color-dark;
   padding: 50px 0;
   background-image: image-set(
-    url("../img/booking/booking-bg.jpg") 1x,
-    url("../img/booking/booking-bg.webp") 1x
+    url("../img/booking/booking-bg.webp") 1x,
+    url("../img/booking/booking-bg.jpg") 1x
   );
   background-repeat: no-repeat;
   background-position: top;
@@ -12,30 +12,36 @@
 
   @include retina {
     background-image: image-set(
-      url("../img/booking/booking-bg@2x.jpg") 2x,
-      url("../img/booking/booking-bg@2x.webp") 2x
+      url("../img/booking/booking-bg@2x.webp") 2x,
+      url("../img/booking/booking-bg@2x.jpg") 2x
     );
   }
 
   @include vp-1023 {
     background-position: right;
-    padding: 100px 0;
+    padding-top: 90px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
     background-position: 58% 50%;
-    padding: 65px 0;
+    padding-top: 60px;
+    padding-bottom: 65px;
   }
 }
 
 .booking__wrapper {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
 
   @include vp-1023 {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   @include vp-767 {
@@ -48,11 +54,13 @@
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
+  margin-top: 165px;
 
   @include vp-1023 {
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 
   @include vp-767 {
@@ -64,19 +72,19 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   @include vp-1023 {
     font-size: 34px;
     line-height: 51px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
   }
 
   @include vp-767 {
     text-align: center;
     font-size: 24px;
     line-height: 31px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -104,10 +112,15 @@
   padding: 50px;
   max-width: 403px;
 
+  @include vp-1023 {
+    padding-top: 45px;
+  }
+
   @include vp-767 {
     justify-content: center;
-    // align-items: center;
+    align-items: center;
     padding: 40px 30px;
+    padding-top: 35px;
     max-width: 100%;
   }
 }
@@ -116,11 +129,11 @@
   font-weight: 450;
   font-size: 18px;
   line-height: 27px;
-  margin-bottom: 35px;
-  text-align: center;
+  margin-bottom: 25px;
 
   @include vp-767 {
     line-height: 25px;
+    text-align: center;
   }
 }
 
@@ -151,7 +164,7 @@
   margin-bottom: 35px;
 
   @include vp-767 {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }
 

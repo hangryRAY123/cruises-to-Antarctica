@@ -2,10 +2,11 @@
   position: relative;
   color: $color-dark;
   background-color: #c3d9ea;
-  padding: 120px 0;
+  padding-top: 110px;
+  padding-bottom: 120px;
   background-image: image-set(
-    url("../img/advantages/advantages-bg.jpg") 1x,
-    url("../img/advantages/advantages-bg.webp") 1x
+    url("../img/advantages/advantages-bg.webp") 1x,
+    url("../img/advantages/advantages-bg.jpg") 1x
   );
   background-repeat: no-repeat;
   background-position: center;
@@ -13,8 +14,8 @@
 
   @include retina {
     background-image: image-set(
-      url("../img/advantages/advantages-bg@2x.jpg") 2x,
-      url("../img/advantages/advantages-bg@2x.webp") 2x
+      url("../img/advantages/advantages-bg@2x.webp") 2x,
+      url("../img/advantages/advantages-bg@2x.jpg") 2x
     );
   }
 
@@ -30,12 +31,13 @@
   }
 
   @include vp-1023 {
-    padding: 100px 0;
+    padding-top: 90px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
     background-position: left;
-    padding: 65px 0;
+    padding-top: 60px;
   }
 }
 
@@ -49,17 +51,18 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 
   @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
+    margin-bottom: 45px;
   }
 
   @include vp-767 {
     font-size: 24px;
     line-height: 36px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
@@ -79,10 +82,10 @@
 
 .advantages__item {
   background-color: $color-light;
-  padding: 30px;
+  padding: 30px 30px 45px 30px;
 
   @include vp-1023 {
-    padding: 25px 20px;
+    padding: 25px 16px 20px 20px;
   }
 
   @include vp-1023 {
@@ -107,8 +110,12 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
-  margin-top: 25px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  @include vp-767 {
+    margin-bottom: 5px;
+  }
 }
 
 .advantages__item p {

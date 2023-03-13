@@ -65,8 +65,8 @@
   @include vp-767 {
     display: block;
     position: absolute;
-    width: 24px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
     border: none;
     background-color: transparent;
 
@@ -80,14 +80,14 @@
     }
   }
 
-  top: 25px;
-  right: 15px;
+  top: 18px;
+  right: 8px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    width: 16px;
+    width: 18px;
     height: 2px;
     background-color: $color-dark;
     right: 5px;
