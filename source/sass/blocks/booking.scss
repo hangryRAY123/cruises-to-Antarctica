@@ -111,8 +111,10 @@
   color: $color-light;
   padding: 50px;
   max-width: 403px;
+  align-self: center;
 
   @include vp-1023 {
+    align-self: auto;
     padding-top: 45px;
   }
 
@@ -140,6 +142,7 @@
 .booking__form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .booking__form div {

@@ -7,11 +7,15 @@
   @include vp-1023 {
     padding-top: 90px;
     padding-bottom: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   @include vp-767 {
     padding-top: 55px;
     padding-bottom: 65px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -45,11 +49,11 @@
   gap: 30px;
 
   @include vp-1023 {
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @include vp-767 {
-    width: 100%;
     grid-template-columns: 1fr;
   }
 }
@@ -115,15 +119,21 @@
   background-color: $color-dark;
   color: $color-light;
   width: 100%;
-  min-height: 386px;
+  height: 386px;
   top: 0;
   padding: 25px;
   padding-bottom: 35px;
   z-index: 3;
+  overflow-y: overlay;
 
   @include vp-1023 {
     padding: 35px;
     padding-top: 30px;
+  }
+
+  @include vp-767 {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -137,6 +147,7 @@
 .tours__description ul {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .tours__description li {

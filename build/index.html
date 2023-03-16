@@ -43,42 +43,57 @@
               alt="Логотип Круизы в Антарктику."
               data-validate="logo"
             />
-            <nav class="nav nav--opened" data-validate="nav">
-              <img
-                src="img/logo/logo-mobile.svg"
-                width="42"
-                height="22"
-                alt="Логотип Круизы в Антарктику."
-              />
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a
-                    href="#advantages"
-                    class="nav__link"
-                    data-validate="nav-link"
-                    >Преимущества</a
+            <div class="header__nav" data-validate="overlay">
+              <div class="header__nav-wrapper">
+                <div class="header__overlay"></div>
+                <nav class="nav nav--opened" data-validate="nav">
+                  <img
+                    src="img/logo/logo-mobile.svg"
+                    width="42"
+                    height="22"
+                    alt="Логотип Круизы в Антарктику."
+                  />
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <a
+                        href="#advantages"
+                        class="nav__link"
+                        data-validate="nav-link"
+                        >Преимущества</a
+                      >
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link" data-validate="nav-link"
+                        >Направления</a
+                      >
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="#tours"
+                        class="nav__link"
+                        data-validate="nav-link"
+                        >Ближайшие круизы</a
+                      >
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="#contacts"
+                        class="nav__link"
+                        data-validate="nav-link"
+                        >Контакты</a
+                      >
+                    </li>
+                  </ul>
+                  <button
+                    class="btn-close"
+                    data-validate="btn-close"
+                    type="button"
                   >
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link" data-validate="nav-link"
-                    >Направления</a
-                  >
-                </li>
-                <li class="nav__item">
-                  <a href="#tours" class="nav__link" data-validate="nav-link"
-                    >Ближайшие круизы</a
-                  >
-                </li>
-                <li class="nav__item">
-                  <a href="#contacts" class="nav__link" data-validate="nav-link"
-                    >Контакты</a
-                  >
-                </li>
-              </ul>
-              <button class="btn-close" data-validate="btn-close" type="button">
-                <span class="visually-hidden">Закрыть меню.</span>
-              </button>
-            </nav>
+                    <span class="visually-hidden">Закрыть меню.</span>
+                  </button>
+                </nav>
+              </div>
+            </div>
             <button class="btn-open" data-validate="btn-open" type="button">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
@@ -88,7 +103,7 @@
       <main>
         <!-- Интро -->
 
-        <section class="entry lazyload">
+        <section class="entry">
           <div class="container">
             <div class="entry__wrapper">
               <h1>Круизы в&nbsp;Антарктику</h1>
@@ -289,8 +304,8 @@
                       ><source
                         type="image/webp"
                         data-srcset="
-                          img/tours/tour-2.webp    1x,
-                          img/tours/tour-2@2x.webp 2x
+                          img/tours/tour-7.webp    1x,
+                          img/tours/tour-7@2x.webp 2x
                         "
                         srcset="
                           data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=
@@ -299,10 +314,10 @@
                       <img
                         class="lazyload"
                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII="
-                        data-src="img/tours/tour-2.jpg"
+                        data-src="img/tours/tour-7.jpg"
                         data-srcset="
-                          img/tours/tour-2.jpg    1x,
-                          img/tours/tour-2@2x.jpg 2x
+                          img/tours/tour-7.jpg    1x,
+                          img/tours/tour-7@2x.jpg 2x
                         "
                         width="260"
                         height="386"
@@ -314,15 +329,15 @@
                         ><source
                           type="image/webp"
                           srcset="
-                            img/tours/tour-2.webp    1x,
-                            img/tours/tour-2@2x.webp 2x
+                            img/tours/tour-7.webp    1x,
+                            img/tours/tour-7@2x.webp 2x
                           "
                         />
                         <img
-                          src="img/tours/tour-2.jpg"
+                          src="img/tours/tour-7.jpg"
                           srcset="
-                            img/tours/tour-2.jpg    1x,
-                            img/tours/tour-2@2x.jpg 2x
+                            img/tours/tour-7.jpg    1x,
+                            img/tours/tour-7@2x.jpg 2x
                           "
                           width="260"
                           height="386"
@@ -342,9 +357,7 @@
                           Чили</span
                         >
                       </li>
-                      <li>
-                        <b>Порт(ы) отправления</b><span>Буэнос-Айрес</span>
-                      </li>
+                      <li><b>Порт отправления</b><span>Буэнос-Айрес</span></li>
                       <li><b>Продолжительность</b><span>20 дней</span></li>
                       <li><b>Цена</b><span>от 14500 $</span></li>
                     </ul>
@@ -357,8 +370,8 @@
                       ><source
                         type="image/webp"
                         data-srcset="
-                          img/tours/tour-3.webp    1x,
-                          img/tours/tour-3@2x.webp 2x
+                          img/tours/tour-2.webp    1x,
+                          img/tours/tour-2@2x.webp 2x
                         "
                         srcset="
                           data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=
@@ -367,10 +380,10 @@
                       <img
                         class="lazyload"
                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII="
-                        data-src="img/tours/tour-3.jpg"
+                        data-src="img/tours/tour-2.jpg"
                         data-srcset="
-                          img/tours/tour-3.jpg    1x,
-                          img/tours/tour-3@2x.jpg 2x
+                          img/tours/tour-2.jpg    1x,
+                          img/tours/tour-2@2x.jpg 2x
                         "
                         width="260"
                         height="386"
@@ -382,15 +395,15 @@
                         ><source
                           type="image/webp"
                           srcset="
-                            img/tours/tour-3.webp    1x,
-                            img/tours/tour-3@2x.webp 2x
+                            img/tours/tour-2.webp    1x,
+                            img/tours/tour-2@2x.webp 2x
                           "
                         />
                         <img
-                          src="img/tours/tour-3.jpg"
+                          src="img/tours/tour-2.jpg"
                           srcset="
-                            img/tours/tour-3.jpg    1x,
-                            img/tours/tour-3@2x.jpg 2x
+                            img/tours/tour-2.jpg    1x,
+                            img/tours/tour-2@2x.jpg 2x
                           "
                           width="260"
                           height="386"
@@ -423,8 +436,8 @@
                       ><source
                         type="image/webp"
                         data-srcset="
-                          img/tours/tour-4.webp    1x,
-                          img/tours/tour-4@2x.webp 2x
+                          img/tours/tour-3.webp    1x,
+                          img/tours/tour-3@2x.webp 2x
                         "
                         srcset="
                           data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=
@@ -433,10 +446,10 @@
                       <img
                         class="lazyload"
                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII="
-                        data-src="img/tours/tour-4.jpg"
+                        data-src="img/tours/tour-3.jpg"
                         data-srcset="
-                          img/tours/tour-4.jpg    1x,
-                          img/tours/tour-4@2x.jpg 2x
+                          img/tours/tour-3.jpg    1x,
+                          img/tours/tour-3@2x.jpg 2x
                         "
                         width="260"
                         height="386"
@@ -448,15 +461,15 @@
                         ><source
                           type="image/webp"
                           srcset="
-                            img/tours/tour-4.webp    1x,
-                            img/tours/tour-4@2x.webp 2x
+                            img/tours/tour-3.webp    1x,
+                            img/tours/tour-3@2x.webp 2x
                           "
                         />
                         <img
-                          src="img/tours/tour-4.jpg"
+                          src="img/tours/tour-3.jpg"
                           srcset="
-                            img/tours/tour-4.jpg    1x,
-                            img/tours/tour-4@2x.jpg 2x
+                            img/tours/tour-3.jpg    1x,
+                            img/tours/tour-3@2x.jpg 2x
                           "
                           width="260"
                           height="386"
@@ -483,8 +496,8 @@
                       ><source
                         type="image/webp"
                         data-srcset="
-                          img/tours/tour-5.webp    1x,
-                          img/tours/tour-5@2x.webp 2x
+                          img/tours/tour-4.webp    1x,
+                          img/tours/tour-4@2x.webp 2x
                         "
                         srcset="
                           data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=
@@ -493,10 +506,10 @@
                       <img
                         class="lazyload"
                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII="
-                        data-src="img/tours/tour-5.jpg"
+                        data-src="img/tours/tour-4.jpg"
                         data-srcset="
-                          img/tours/tour-5.jpg    1x,
-                          img/tours/tour-5@2x.jpg 2x
+                          img/tours/tour-4.jpg    1x,
+                          img/tours/tour-4@2x.jpg 2x
                         "
                         width="260"
                         height="386"
@@ -508,15 +521,15 @@
                         ><source
                           type="image/webp"
                           srcset="
-                            img/tours/tour-5.webp    1x,
-                            img/tours/tour-5@2x.webp 2x
+                            img/tours/tour-4.webp    1x,
+                            img/tours/tour-4@2x.webp 2x
                           "
                         />
                         <img
-                          src="img/tours/tour-5.jpg"
+                          src="img/tours/tour-4.jpg"
                           srcset="
-                            img/tours/tour-5.jpg    1x,
-                            img/tours/tour-5@2x.jpg 2x
+                            img/tours/tour-4.jpg    1x,
+                            img/tours/tour-4@2x.jpg 2x
                           "
                           width="260"
                           height="386"
@@ -549,8 +562,8 @@
                       ><source
                         type="image/webp"
                         data-srcset="
-                          img/tours/tour-6.webp    1x,
-                          img/tours/tour-6@2x.webp 2x
+                          img/tours/tour-5.webp    1x,
+                          img/tours/tour-5@2x.webp 2x
                         "
                         srcset="
                           data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=
@@ -559,10 +572,10 @@
                       <img
                         class="lazyload"
                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII="
-                        data-src="img/tours/tour-6.jpg"
+                        data-src="img/tours/tour-5.jpg"
                         data-srcset="
-                          img/tours/tour-6.jpg    1x,
-                          img/tours/tour-6@2x.jpg 2x
+                          img/tours/tour-5.jpg    1x,
+                          img/tours/tour-5@2x.jpg 2x
                         "
                         width="260"
                         height="386"
@@ -574,15 +587,15 @@
                         ><source
                           type="image/webp"
                           srcset="
-                            img/tours/tour-6.webp    1x,
-                            img/tours/tour-6@2x.webp 2x
+                            img/tours/tour-5.webp    1x,
+                            img/tours/tour-5@2x.webp 2x
                           "
                         />
                         <img
-                          src="img/tours/tour-6.jpg"
+                          src="img/tours/tour-5.jpg"
                           srcset="
-                            img/tours/tour-6.jpg    1x,
-                            img/tours/tour-6@2x.jpg 2x
+                            img/tours/tour-5.jpg    1x,
+                            img/tours/tour-5@2x.jpg 2x
                           "
                           width="260"
                           height="386"
@@ -611,8 +624,8 @@
                       ><source
                         type="image/webp"
                         data-srcset="
-                          img/tours/tour-7.webp    1x,
-                          img/tours/tour-7@2x.webp 2x
+                          img/tours/tour-6.webp    1x,
+                          img/tours/tour-6@2x.webp 2x
                         "
                         srcset="
                           data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=
@@ -621,10 +634,10 @@
                       <img
                         class="lazyload"
                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII="
-                        data-src="img/tours/tour-7.jpg"
+                        data-src="img/tours/tour-6.jpg"
                         data-srcset="
-                          img/tours/tour-7.jpg    1x,
-                          img/tours/tour-7@2x.jpg 2x
+                          img/tours/tour-6.jpg    1x,
+                          img/tours/tour-6@2x.jpg 2x
                         "
                         width="260"
                         height="386"
@@ -636,15 +649,15 @@
                         ><source
                           type="image/webp"
                           srcset="
-                            img/tours/tour-7.webp    1x,
-                            img/tours/tour-7@2x.webp 2x
+                            img/tours/tour-6.webp    1x,
+                            img/tours/tour-6@2x.webp 2x
                           "
                         />
                         <img
-                          src="img/tours/tour-7.jpg"
+                          src="img/tours/tour-6.jpg"
                           srcset="
-                            img/tours/tour-7.jpg    1x,
-                            img/tours/tour-7@2x.jpg 2x
+                            img/tours/tour-6.jpg    1x,
+                            img/tours/tour-6@2x.jpg 2x
                           "
                           width="260"
                           height="386"
@@ -676,8 +689,8 @@
                       ><source
                         type="image/webp"
                         data-srcset="
-                          img/tours/tour-2.webp    1x,
-                          img/tours/tour-2@2x.webp 2x
+                          img/tours/tour-7.webp    1x,
+                          img/tours/tour-7@2x.webp 2x
                         "
                         srcset="
                           data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=
@@ -686,10 +699,10 @@
                       <img
                         class="lazyload"
                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII="
-                        data-src="img/tours/tour-2.jpg"
+                        data-src="img/tours/tour-7.jpg"
                         data-srcset="
-                          img/tours/tour-2.jpg    1x,
-                          img/tours/tour-2@2x.jpg 2x
+                          img/tours/tour-7.jpg    1x,
+                          img/tours/tour-7@2x.jpg 2x
                         "
                         width="260"
                         height="386"
@@ -701,15 +714,15 @@
                         ><source
                           type="image/webp"
                           srcset="
-                            img/tours/tour-2.webp    1x,
-                            img/tours/tour-2@2x.webp 2x
+                            img/tours/tour-7.webp    1x,
+                            img/tours/tour-7@2x.webp 2x
                           "
                         />
                         <img
-                          src="img/tours/tour-2.jpg"
+                          src="img/tours/tour-7.jpg"
                           srcset="
-                            img/tours/tour-2.jpg    1x,
-                            img/tours/tour-2@2x.jpg 2x
+                            img/tours/tour-7.jpg    1x,
+                            img/tours/tour-7@2x.jpg 2x
                           "
                           width="260"
                           height="386"
