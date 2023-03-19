@@ -1004,6 +1004,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .tours__wrapper h2 {
@@ -1019,12 +1021,12 @@ button,
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  width: 100%;
 }
 
 .tours__item {
   position: relative;
-  min-height: 386px;
-  max-width: 260px;
+  height: 100%;
   cursor: pointer;
 }
 
@@ -1051,6 +1053,7 @@ button,
 
 .tours__item img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -1076,7 +1079,7 @@ button,
   background-color: #011c40;
   color: #f9fbfd;
   width: 100%;
-  height: 386px;
+  height: 100%;
   top: 0;
   padding: 25px;
   padding-bottom: 35px;
@@ -1609,8 +1612,6 @@ button,
   .tours {
     padding-top: 90px;
     padding-bottom: 100px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   .tours__wrapper h2 {
@@ -1619,7 +1620,6 @@ button,
   }
 
   .tours__list {
-    width: 100%;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1979,6 +1979,9 @@ button,
   .tours {
     padding-top: 55px;
     padding-bottom: 65px;
+  }
+
+  .tours__wrapper {
     padding-left: 10px;
     padding-right: 10px;
   }
